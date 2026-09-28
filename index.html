@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildwater Fishing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <div id="loading">
+        <div class="loading-title">WILDWATER</div>
+        <div class="loading-sub">FISHING</div>
+        <div class="loading-bar">
+            <div id="loadProgress"></div>
+        </div>
+        <p>Loading Pinewater Lake...</p>
+    </div>
+
+    <div id="game">
+
+        <div id="crosshair">+</div>
+
+        <div id="topHud">
+            <div>
+                <strong>PINEWATER LAKE</strong>
+                <span>Morning • Clear • Light Wind</span>
+            </div>
+
+            <div class="money">
+                $<span id="money">250</span>
+            </div>
+        </div>
+
+        <div id="bottomHud">
+
+            <div class="equipment">
+                <div class="equipment-title">EQUIPMENT</div>
+
+                <div class="equipment-row">
+                    <span>ROD</span>
+                    <strong>Lake Master 7'6"</strong>
+                </div>
+
+                <div class="equipment-row">
+                    <span>REEL</span>
+                    <strong>3000 Spinning</strong>
+                </div>
+
+                <div class="equipment-row">
+                    <span>LINE</span>
+                    <strong>10 LB Mono</strong>
+                </div>
+
+                <div class="equipment-row">
+                    <span>BAIT</span>
+                    <strong>Worm</strong>
+                </div>
+            </div>
+
+            <div id="status">
+                <strong id="statusTitle">READY</strong>
+                <span id="statusText">Press SPACE to cast</span>
+            </div>
+
+            <div id="fishInfo">
+                <div>FISH</div>
+                <strong id="fishName">—</strong>
+
+                <div class="tension">
+                    <div id="tensionBar"></div>
+                </div>
+
+                <small>LINE TENSION</small>
+            </div>
+
+        </div>
+
+        <div id="controls">
+            <span>WASD Move</span>
+            <span>Mouse Look</span>
+            <span>SPACE Cast / Reel</span>
+            <span>E Interact</span>
+        </div>
+
+        <div id="catchScreen">
+            <div class="catch-card">
+                <div class="catch-small">FISH CAUGHT</div>
+                <div id="caughtFish">LARGEMOUTH BASS</div>
+                <div id="caughtWeight">4.8 lb</div>
+                <button id="keepFish">KEEP FISH</button>
+                <button id="releaseFish">RELEASE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
